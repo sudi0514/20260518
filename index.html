@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✊ 剪刀石頭布 — AI 手勢辨識</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="author-tag">412730060蘇娣</div>
+    <video id="vid" playsinline></video>
+    <div id="wrap">
+      <canvas id="c" width="640" height="480"></canvas>
+    </div>
+    <div id="footer">
+      ✊ 石頭 &ensp; 🖐 布 &ensp; ✌️ 剪刀 &ensp;|&ensp;
+      AI 即時手勢辨識猜拳 — 請允許攝影機存取
+    </div>
+
+    <!--
+      MediaPipe Camera Utils & Hands
+      使用 CDN 載入，需要網路連線
+    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 主程式 -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
